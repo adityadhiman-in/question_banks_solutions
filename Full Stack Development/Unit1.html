@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 2rem 15rem;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #000000;
+        }
+        .level {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            border-bottom: 1px solid #66d9ef;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .answer {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        
+        .code-container {
+            
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            margin: 20px;
+            padding: 20px;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 35, 11);
+            color: white;
+            text-align: center;
+        }
+        @media(max-width:800px){
+            body{
+                margin: 1rem;
+            }
+        }
+        .unit{
+            margin: 20px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Full Stack Development Question Bank Solution</h1>
+<h2 class="unit">Unit 1</h2>
+<div class="level">Level A</div>
+
+<div class="question">Q1. How would you create a hyperlink (a link) to another website in HTML?</div>
+<div class="answer">
+    You can create a hyperlink using the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute. For example:
+    <div class="code-container">
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q2. Explain the difference between inline elements and block elements in HTML.</div>
+<div class="answer">
+    Inline elements do not start on a new line and only take up as much width as necessary, whereas block elements start on a new line and take up the full width available. Examples include <code>&lt;span&gt;</code> (inline) and <code>&lt;div&gt;</code> (block).
+</div>
+
+<div class="question">Q3. Describe the use of the &lt;blockquote&gt; tag in HTML.</div>
+<div class="answer">
+    The <code>&lt;blockquote&gt;</code> tag is used to denote a section that is quoted from another source. It typically renders with an indentation.
+    <div class="code-container">
+        <pre><code>&lt;blockquote&gt;This is a quote.&lt;/blockquote&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q4. What is the purpose of using the &lt;em&gt; tag in HTML? Provide an example.</div>
+<div class="answer">
+    The <code>&lt;em&gt;</code> tag is used to emphasize text, usually rendered in italics.
+    <div class="code-container">
+        <pre><code>&lt;p&gt;This is an &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q5. How do you add attributes to HTML elements? Provide an example.</div>
+<div class="answer">
+    You can add attributes directly in the opening tag of an element. For example:
+    <div class="code-container">
+        <pre><code>&lt;img src="image.png" alt="Description"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q6. Create one webpage and show the use of the style attribute.</div>
+<div class="answer">
+    You can use the <code>style</code> attribute to add CSS styles directly to an element.
+    <div class="code-container">
+        <pre><code>&lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q7. Can we write &lt;H1&gt; tag in head tag &lt;Head&gt;? Show with the help of an example.</div>
+<div class="answer">
+    No, the <code>&lt;h1&gt;</code> tag should be in the body, not the head. Here’s an example:
+    <div class="code-container">
+        <pre><code>&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;&lt;h1&gt;This is a heading&lt;/h1&gt;&lt;/body&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q8. How can you change the color of text or background in HTML? Give an example.</div>
+<div class="answer">
+    You can use the <code>style</code> attribute or CSS to change colors.
+    <div class="code-container">
+        <pre><code>&lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q9. How can you change the color of text or background in HTML? Give an example.</div>
+<div class="answer">
+    Similar to the previous question, you can use CSS:
+    <div class="code-container">
+        <pre><code>&lt;div style="background-color: yellow;"&gt;This has a yellow background.&lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q10. Create an HTML list containing three items. Two items should be ordered, and one unordered.</div>
+<div class="answer">
+    Here’s an example of an ordered and unordered list:
+    <div class="code-container">
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q11. Construct an HTML table with two rows and three columns, containing sample data.</div>
+<div class="answer">
+    An example of an HTML table:
+    <div class="code-container">
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q12. List and briefly explain three common attributes you can use within an HTML &lt;form&gt; tag.</div>
+<div class="answer">
+    Common attributes include:
+    <ul>
+        <li><code>action</code>: Specifies where to send form data when submitted.</li>
+        <li><code>method</code>: Defines the HTTP method (GET or POST) to send the form data.</li>
+        <li><code>enctype</code>: Specifies how the form data should be encoded when submitted.</li>
+    </ul>
+</div>
+
+<div class="question">Q13. How can you ensure that a user's input meets specific criteria in an HTML form before submission?</div>
+<div class="answer">
+    You can use HTML5 attributes like <code>required</code>, <code>pattern</code>, and <code>maxlength</code> for validation.
+    <div class="code-container">
+        <pre><code>&lt;input type="text" required pattern="[A-Za-z]+"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q14. How can you specify colors in HTML using color names and hexadecimal values?</div>
+<div class="answer">
+    You can specify colors using names or hex codes:
+    <div class="code-container">
+        <pre><code>&lt;p style="color: red;"&gt;This is red text.&lt;/p&gt;
+&lt;p style="color: #00ff00;"&gt;This is green text.&lt;/p&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q15. Describe the purpose of the action and method attributes in an HTML form.</div>
+<div class="answer">
+    The <code>action</code> attribute specifies the URL to which the form data will be sent, while the <code>method</code> attribute indicates how to send the data (GET or POST).
+</div>
+
+<div class="question">Q16. How can you create radio buttons and checkboxes in a form?</div>
+<div class="answer">
+    Radio buttons allow for single selections, while checkboxes allow for multiple selections:
+    <div class="code-container">
+        <pre><code>&lt;input type="radio" name="option" value="1"&gt; Option 1&lt;br&gt;
+&lt;input type="radio" name="option" value="2"&gt; Option 2&lt;br&gt;
+&lt;input type="checkbox" name="check1"&gt; Check 1&lt;br&gt;
+&lt;input type="checkbox" name="check2"&gt; Check 2</code></pre>
+    </div>
+</div>
+
+<div class="question">Q17. Provide an example of client-side form validation using HTML attributes.</div>
+<div class="answer">
+    HTML5 offers various attributes for validation:
+    <div class="code-container">
+        <pre><code>&lt;input type="email" required&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q18. Provide an example of using the Geolocation API in HTML.</div>
+<div class="answer">
+    You can access a user's location with the Geolocation API:
+    <div class="code-container">
+        <pre><code>navigator.geolocation.getCurrentPosition(function(position) {
+    console.log(position.coords.latitude, position.coords.longitude);
+});</code></pre>
+    </div>
+</div>
+
+<div class="question">Q19. Describe the roles of the &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; tags in an HTML document.</div>
+<div class="answer">
+    - The <code>&lt;head&gt;</code> tag contains meta-information about the document.
+    - The <code>&lt;title&gt;</code> tag sets the title displayed in the browser tab.
+    - The <code>&lt;body&gt;</code> tag contains the content displayed on the webpage.
+</div>
+
+<div class="question">Q20. Explain the process of form validation in HTML, including client-side and server-side validation.</div>
+<div class="answer">
+    Client-side validation occurs in the browser before submission, using HTML attributes and JavaScript. Server-side validation occurs after form submission on the server to ensure data integrity.
+</div>
+
+<div class="question">Q21. How can you include an audio element in an HTML document to play a sound file?</div>
+<div class="answer">
+    Use the <code>&lt;audio&gt;</code> tag to embed sound:
+    <div class="code-container">
+        <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q22. Provide the HTML code to embed a video hosted on an external platform.</div>
+<div class="answer">
+    You can embed a video using the <code>&lt;iframe&gt;</code> tag:
+    <div class="code-container">
+        <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q23. Discuss the concept of HTML APIs. Provide an example of an API commonly used in web development.</div>
+<div class="answer">
+    HTML APIs provide additional functionalities to HTML elements. An example is the <code>Canvas API</code> for drawing graphics.
+</div>
+
+<div class="level">Level B</div>
+
+<div class="question">Q24. Explain the difference between an absolute URL and a relative URL when creating links in HTML. Additionally, describe the purpose of the &lt;img&gt; element and how you would use it to display an image on a webpage.</div>
+<div class="answer">
+    An absolute URL includes the full path to a resource, while a relative URL is based on the current page's location. The <code>&lt;img&gt;</code> element is used to display images.
+    <div class="code-container">
+        <pre><code>&lt;a href="https://www.example.com"&gt;Absolute URL&lt;/a&gt;
+&lt;a href="image.png"&gt;Relative URL&lt;/a&gt;
+&lt;img src="image.png" alt="Description"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q25. What is the purpose of the HTML &lt;b&gt; element? How does it differ from the &lt;strong&gt; element? Provide an example of when each one might be used in a webpage.</div>
+<div class="answer">
+    The <code>&lt;b&gt;</code> tag is used to bold text without implying importance, while <code>&lt;strong&gt;</code> conveys strong importance. Example:
+    <div class="code-container">
+        <pre><code>&lt;b&gt;This is bold text&lt;/b&gt;
+&lt;strong&gt;This is important text&lt;/strong&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q26. Name three commonly used input types in HTML forms and briefly describe their purposes. How can the required attribute be used to enhance form validation? Provide an example of a form with these input types and the required attribute.</div>
+<div class="answer">
+    Common input types include:
+    <ul>
+        <li><code>text</code>: For single-line text input.</li>
+        <li><code>email</code>: For email addresses.</li>
+        <li><code>password</code>: For password input (hidden characters).</li>
+    </ul>
+    The <code>required</code> attribute ensures the user must fill out that field.
+    <div class="code-container">
+        <pre><code>&lt;form&gt;
+    &lt;input type="text" required&gt;
+    &lt;input type="email" required&gt;
+    &lt;input type="password" required&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q27. Describe the process of creating a basic HTML form. Explain the significance of the &lt;form&gt;, &lt;input&gt;, and &lt;button&gt; elements within the form structure.</div>
+<div class="answer">
+    To create a basic form, use the <code>&lt;form&gt;</code> tag, which wraps around all form elements. <code>&lt;input&gt;</code> elements gather user data, and a <code>&lt;button&gt;</code> submits the form.
+    <div class="code-container">
+        <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q28. Develop a complex HTML form for user registration, including fields for name, email, password, and date of birth. Implement thorough form validation using HTML5 attributes, such as pattern and required, along with JavaScript. Provide detailed code examples of how you would validate the user's input in real-time, offering appropriate error messages and visual cues. Discuss the importance of client-side validation and its limitations.</div>
+<div class="answer">
+    Here’s an example of a user registration form:
+    <div class="code-container">
+        <pre><code>&lt;form id="registrationForm"&gt;
+    &lt;input type="text" name="name" required placeholder="Full Name"&gt;
+    &lt;input type="email" name="email" required placeholder="Email"&gt;
+    &lt;input type="password" name="password" required placeholder="Password" minlength="8"&gt;
+    &lt;input type="date" name="dob" required&gt;
+    &lt;button type="submit"&gt;Register&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+    document.getElementById('registrationForm').onsubmit = function() {
+        // Real-time validation logic here
+    };
+&lt;/script&gt;</code></pre>
+    </div>
+    Client-side validation provides immediate feedback but may be bypassed; hence server-side validation is also essential.
+</div>
+
+<div class="question">Q29. Imagine you are building a multimedia-rich webpage that showcases images, videos, and audio tracks in a grid-based gallery format. Explain how you would structure the HTML using semantic elements to create a visually appealing and accessible gallery. Include techniques for optimizing the performance of loading multimedia content, such as lazy loading and responsive design. Discuss the role of HTML attributes, particularly those related to multimedia elements, in enhancing the user experience.</div>
+<div class="answer">
+    To create a multimedia gallery, use semantic elements like <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code>, and <code>&lt;section&gt;</code> for organization. Implement lazy loading for images and audio/video optimization. Example structure:
+    <div class="code-container">
+        <pre><code>&lt;section class="gallery"&gt;
+    &lt;figure&gt;
+        &lt;img src="image1.png" loading="lazy" alt="Description"&gt;
+        &lt;figcaption&gt;Image Caption&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;video controls loading="lazy"&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+        &lt;/video&gt;
+        &lt;figcaption&gt;Video Caption&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+    HTML attributes like <code>alt</code> enhance accessibility for screen readers, while <code>loading="lazy"</code> improves loading performance.
+</div>
+
+<div class="question">Q30. Explain the significance of semantic HTML. Provide examples of semantic elements and discuss how their usage enhances accessibility, SEO, and maintainability of a webpage. Discuss how semantic HTML can improve the performance of a webpage by reducing reliance on extraneous CSS and JavaScript.</div>
+<div class="answer">
+    Semantic HTML uses elements that clearly describe their meaning, improving accessibility and SEO. Examples include <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>. 
+    Using these elements reduces the need for excessive CSS for styling and enhances maintainability:
+    <div class="code-container">
+        <pre><code>&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content here.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q31. Discuss the purpose of the &lt;meta&gt; tag in the &lt;head&gt; section of an HTML document. Explain how to use it for search engine optimization (SEO) and social media sharing. Provide examples of relevant attributes, such as description and keywords.</div>
+<div class="answer">
+    The <code>&lt;meta&gt;</code> tag provides metadata about the HTML document, which is essential for SEO and social media sharing:
+    <div class="code-container">
+        <pre><code>&lt;meta name="description" content="A brief description of the page"&gt;
+&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q32. What is the role of the &lt;link&gt; tag in an HTML document? How can it be used to link to external stylesheets, and what are the benefits of using separate stylesheets? Provide examples.</div>
+<div class="answer">
+    The <code>&lt;link&gt;</code> tag links to external resources like stylesheets. Benefits include separation of concerns, maintainability, and caching:
+    <div class="code-container">
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q33. Provide an example of using the &lt;canvas&gt; element in HTML. Discuss its purpose and how it can be manipulated with JavaScript for dynamic graphics creation.</div>
+<div class="answer">
+    The <code>&lt;canvas&gt;</code> element is used for drawing graphics via JavaScript. Example:
+    <div class="code-container">
+        <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 0, 200, 100);
+&lt;/script&gt;</code></pre>
+    </div>
+    It allows for dynamic graphic generation and manipulation within a web page.
+</div>
+
+</div>
+
+
+<h2>Level C</h2>
+
+<div class="question">Q34. Discuss the purpose of the &lt;meta&gt; tag in the &lt;head&gt; section of an HTML document. Explain how to use it for search engine optimization (SEO) and social media sharing. Provide examples of relevant attributes, such as description and keywords.</div>
+<div class="answer">
+    The <code>&lt;meta&gt;</code> tag is a fundamental component of the &lt;head&gt; section in an HTML document. It provides metadata about the HTML document itself, which is essential for browsers and search engines. The purpose of the &lt;meta&gt; tag includes specifying the character set, the author's name, and, most importantly for SEO, the description and keywords of the web page.
+
+    For search engine optimization (SEO), the <code>&lt;meta name="description"&gt;</code> attribute plays a crucial role. It provides a concise summary of the web page's content, which appears in search engine results. A well-crafted description can significantly influence click-through rates. The <code>&lt;meta name="keywords"&gt;</code> attribute, though less impactful today, can still be used to list relevant keywords related to the content.
+
+    Additionally, when sharing on social media platforms, the <code>&lt;meta&gt;</code> tag can enhance the appearance of links shared. Attributes like <code>og:title</code>, <code>og:description</code>, and <code>og:image</code> are part of the Open Graph protocol, which allows for more engaging content previews.
+
+    Example of using the <code>&lt;meta&gt;</code> tag for SEO and social media sharing:
+    <div class="code-container">
+        <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Learn the basics of HTML and how to build your first web page."&gt;
+&lt;meta name="keywords" content="HTML, web development, coding"&gt;
+&lt;meta property="og:title" content="My First Web Page"&gt;
+&lt;meta property="og:description" content="An introduction to HTML basics."&gt;
+&lt;meta property="og:image" content="image.png"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q35. What is the role of the &lt;link&gt; tag in an HTML document? How can it be used to link to external stylesheets, and what are the benefits of using separate stylesheets? Provide examples.</div>
+<div class="answer">
+    The <code>&lt;link&gt;</code> tag serves as a connection point between an HTML document and external resources, particularly stylesheets. By using the <code>&lt;link&gt;</code> tag, developers can include CSS styles that enhance the presentation of a web page without cluttering the HTML structure.
+
+    Linking to an external stylesheet promotes a clear separation of content (HTML) and presentation (CSS), making the codebase more maintainable. This modular approach allows developers to make style changes without altering the HTML file. Furthermore, using separate stylesheets can significantly improve loading times as browsers can cache CSS files, reducing the need to download the same styles on subsequent visits.
+
+    Example of linking an external stylesheet using the <code>&lt;link&gt;</code> tag:
+    <div class="code-container">
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+    </div>
+    In this example, the browser will load the styles defined in <code>styles.css</code> to apply to the HTML document. Using external stylesheets enhances collaboration among developers, allows for easier updates, and promotes consistency across multiple pages of a website.
+</div>
+
+<div class="question">Q36. Provide an example of using the &lt;canvas&gt; element in HTML. Discuss its purpose and how it can be manipulated with JavaScript for dynamic graphics creation.</div>
+<div class="answer">
+    The <code>&lt;canvas&gt;</code> element is a powerful feature in HTML that allows for dynamic graphics generation via JavaScript. It creates a blank rectangular area on the web page, which can be drawn on using various methods provided by the Canvas API. This element is widely used for creating game graphics, data visualizations, and other graphical content.
+
+    To utilize the <code>&lt;canvas&gt;</code> element, you must specify its dimensions through the <code>width</code> and <code>height</code> attributes. After defining the canvas, JavaScript is used to access the drawing context, which provides methods for rendering shapes, text, images, and more.
+
+    Example of using the <code>&lt;canvas&gt;</code> element:
+    <div class="code-container">
+        <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;<br>
+&lt;script&gt;<br>
+    var canvas = document.getElementById('myCanvas');<br>
+    var ctx = canvas.getContext('2d');<br>
+    ctx.fillStyle = "blue";<br>
+    ctx.fillRect(0, 0, 200, 100);<br>
+&lt;/script&gt;</code></pre>
+    </div>
+    In this example, a blue rectangle is drawn on the canvas. The <code>getContext('2d')</code> method specifies a two-dimensional drawing context, allowing the use of methods like <code>fillRect()</code> to create shapes. The Canvas API also supports advanced operations like animations and user interactions, making it an essential tool for modern web development.
+</div>
+
+<div class="question">Q37. Create an HTML document structure that includes the following elements: a title with the text "My First Web Page", a heading with the text "Welcome to HTML Basics", and two paragraphs: one containing "HTML stands for HyperText Markup Language" and the other containing "It is used to structure content on the web."</div>
+<div class="answer">
+    Below is a structured example of a simple HTML document that showcases various fundamental elements. The document includes a title, a heading, and two paragraphs that explain what HTML is and its purpose.
+
+    The basic structure of an HTML document begins with the <code>&lt;!DOCTYPE&gt;</code> declaration, which informs the browser about the version of HTML being used. The <code>&lt;html&gt;</code> tag wraps the entire document, while the <code>&lt;head&gt;</code> section contains metadata, including the document's title. The <code>&lt;body&gt;</code> section is where the content displayed on the page is defined.
+
+    Here is the complete code:
+    <div class="code-container">
+        <pre><code>&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+    &lt;meta charset="UTF-8"&gt;<br>
+    &lt;title&gt;My First Web Page&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+    &lt;h1&gt;Welcome to HTML Basics&lt;/h1&gt;<br>
+    &lt;p&gt;HTML stands for HyperText Markup Language.&lt;/p&gt;<br>
+    &lt;p&gt;It is used to structure content on the web.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</code></pre>
+    </div>
+    This code effectively introduces the reader to HTML basics by providing essential information in a clear format, demonstrating the hierarchy of content from the title to the paragraphs.
+</div>
+
+<div class="question">Q38. Add an audio element with controls that plays the audio file "song.mp3". Provide alternative text "Play the song" for the audio element.</div>
+<div class="answer">
+    The <code>&lt;audio&gt;</code> element in HTML5 is designed to embed sound content in web pages. This element can include various audio file formats, such as MP3, WAV, and OGG, making it versatile for web applications. By providing controls, users can play, pause, and adjust the volume of the audio directly within the web interface.
+
+    When implementing the <code>&lt;audio&gt;</code> element, it's important to include the <code>controls</code> attribute, which adds a set of audio controls to the interface. Additionally, the <code>&lt;source&gt;</code> element can be used within the <code>&lt;audio&gt;</code> tag to specify the path to the audio file and its type.
+
+    Below is an example of how to implement an audio element that plays "song.mp3":
+    <div class="code-container">
+        <pre><code>&lt;audio controls&gt;<br>
+    &lt;source src="song.mp3" type="audio/mpeg"&gt;<br>
+    Play the song<br>
+    &lt;/audio&gt;</code></pre>
+    </div>
+    In this example, the text "Play the song" serves as fallback content for browsers that do not support the audio element. This ensures that users still have context even if the audio cannot be played, promoting better accessibility and user experience.
+</div>
+
+<div class="question">Q39. Style the heading from the previous question to have a red color and a font size of 24px. Additionally, italicize the second paragraph. Create an unordered list with three items: "Apples," "Bananas," and "Oranges."</div>
+<div class="answer">
+    Styling elements in HTML is essential for enhancing the visual appeal of web content. CSS (Cascading Style Sheets) is used to apply styles to HTML elements, allowing developers to control the layout, colors, fonts, and overall presentation.
+
+    To style the heading with red color and a font size of 24px, and to italicize the second paragraph, we can use CSS selectors. The <code>h1</code> selector targets the heading, while the <code>p:nth-of-type(2)</code> selector targets the second paragraph.
+
+    Here’s an example of how to apply these styles, along with an unordered list containing three items:
+    <div class="code-container">
+        <pre><code>&lt;style&gt;<br>
+    h1 { color: red; font-size: 24px; }<br>
+    p:nth-of-type(2) { font-style: italic; }<br>
+    &lt;/style&gt;<br>
+    &lt;ul&gt;<br>
+        &lt;li&gt;Apples&lt;/li&gt;<br>
+        &lt;li&gt;Bananas&lt;/li&gt;<br>
+        &lt;li&gt;Oranges&lt;/li&gt;<br>
+    &lt;/ul&gt;</code></pre>
+    </div>
+    This code applies the specified styles and generates a list of fruit items. The use of an unordered list (<code>&lt;ul&gt;</code>) creates a bulleted list, enhancing the readability and organization of the content.
+</div>
+
+<div class="question">Q40. Create an HTML form that allows users to submit their name and email. The form should have the following elements: a text input for the user's name, an email input for the user's email address, and a submit button with the label "Submit Form." Apply the following attributes: set the form method to "POST," and add a label for each input field using the &lt;label&gt; element.</div>
+<div class="answer">
+    Forms are essential in web applications as they enable user interaction, allowing visitors to input and submit data. An HTML form can consist of various input types, including text, email, and buttons. By organizing form elements with <code>&lt;label&gt;</code> elements, we enhance accessibility and usability, providing clear descriptions for each input field.
+
+    Below is an example of an HTML form that collects a user's name and email address. The form is set to use the POST method for data submission:
+    <div class="code-container">
+        <pre><code>&lt;form method="POST"&gt;<br>
+    &lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;<br>
+    &lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;<br>
+    &lt;input type="submit" value="Submit Form"&gt;<br>
+&lt;/form&gt;</code></pre>
+    </div>
+    In this example, the form consists of labeled inputs for the user's name and email, as well as a submit button. The <code>for</code> attribute in the <code>&lt;label&gt;</code> elements links each label to its corresponding input field, improving accessibility for screen readers and enhancing the overall user experience. Upon submission, the form data will be sent to the server for processing.
+</div>
+
+<footer>&copy; 2024 || Made With ❤️ By Aditya</footer>
+
+</body>
+</html>
