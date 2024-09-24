@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 2rem 15rem;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #000000;
+      }
+      .level {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        border-bottom: 1px solid #66d9ef;
+        padding-bottom: 10px;
+      }
+      .question {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .answer {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+
+      .code-container {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 1px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: "Courier New", monospace;
+      }
+      pre {
+        margin: 20px;
+        padding: 20px;
+      }
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(0, 35, 11);
+        color: white;
+        text-align: center;
+      }
+      @media (max-width: 800px) {
+        body {
+          margin: 1rem;
+        }
+      }
+      .unit {
+        margin: 20px;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Full Stack Development Question Bank Solution</h1>
+    <h2 class="unit">Unit 2</h2>
+    <div class="level">Level A</div>
+
+    <div class="question">
+      Q1. In how many ways can CSS be integrated into a web page (types of CSS)?
+    </div>
+    <div class="answer">
+      CSS can be integrated into a web page in three main ways:
+      <ol>
+        <li>
+          <strong>Inline CSS:</strong> This involves using the
+          <code>style</code> attribute within HTML tags. It applies styles
+          directly to an element, but it's not recommended for maintaining a
+          clean codebase.
+        </li>
+        <li>
+          <strong>Internal CSS:</strong> Styles are defined within a
+          <code>&lt;style&gt;</code> tag in the
+          <code>&lt;head&gt;</code> section of the HTML document. This method is
+          useful for styling a single document.
+        </li>
+        <li>
+          <strong>External CSS:</strong> An external stylesheet is linked to the
+          HTML document using the <code>&lt;link&gt;</code> tag. This approach
+          is preferred for larger websites as it allows for easier maintenance
+          and consistency across multiple pages.
+        </li>
+      </ol>
+    </div>
+
+    <div class="question">
+      Q2. What is the syntax to link the external style sheet?
+    </div>
+    <div class="answer">
+      To link an external stylesheet to an HTML document, you use the following
+      syntax within the <code>&lt;head&gt;</code> section:
+      <div class="code-container">
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+      </div>
+      In this example, <code>styles.css</code> is the path to the external CSS
+      file.
+    </div>
+
+    <div class="question">
+      Q3. What is a hyperlink? Explain internal and external hyperlinks.
+    </div>
+    <div class="answer">
+      A hyperlink, often referred to as a link, is a clickable reference in a
+      web page that directs users to another resource. There are two main types
+      of hyperlinks:
+      <ul>
+        <li>
+          <strong>Internal Hyperlink:</strong> This links to another page within
+          the same website. For example:
+          <code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code>
+        </li>
+        <li>
+          <strong>External Hyperlink:</strong> This links to a page on a
+          different website. For example:
+          <code
+            >&lt;a href="https://www.example.com"&gt;Visit
+            Example&lt;/a&gt;</code
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q4. List 5 features of JavaScript.</div>
+    <div class="answer">
+      Here are five key features of JavaScript:
+      <ul>
+        <li>
+          <strong>Dynamic Typing:</strong> Variables can hold values of any data
+          type, and types can change at runtime.
+        </li>
+        <li>
+          <strong>Object-Oriented:</strong> JavaScript supports objects and
+          inheritance, allowing for modular code.
+        </li>
+        <li>
+          <strong>Event-Driven:</strong> JavaScript responds to user actions
+          like clicks and key presses, making web pages interactive.
+        </li>
+        <li>
+          <strong>Cross-Platform:</strong> JavaScript runs on any device with a
+          web browser, regardless of the operating system.
+        </li>
+        <li>
+          <strong>Rich Interfaces:</strong> JavaScript can create animations,
+          interactive forms, and dynamic content to enhance user experience.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q5. Explain the difference between client-side and server-side JavaScript.
+    </div>
+    <div class="answer">
+      <strong>Client-Side JavaScript:</strong> This code is executed in the
+      user's web browser. It is primarily used for creating interactive user
+      interfaces, handling events, and manipulating the DOM. Examples include
+      form validation and dynamically updating content without refreshing the
+      page. <br /><br />
+      <strong>Server-Side JavaScript:</strong> This code runs on the web server
+      and is used for handling requests from the client, interacting with
+      databases, and performing server-side logic. Node.js is a popular
+      environment for running server-side JavaScript. It allows for the
+      development of scalable network applications.
+    </div>
+
+    <div class="question">
+      Q6. What are different types of variables in JavaScript?
+    </div>
+    <div class="answer">
+      JavaScript supports three types of variables:
+      <ul>
+        <li>
+          <strong>var:</strong> This declares a variable that can be re-declared
+          and updated. It has function scope and is hoisted.
+        </li>
+        <li>
+          <strong>let:</strong> This declares a block-scoped variable that can
+          be updated but not re-declared within the same scope. It is preferred
+          for use in modern JavaScript.
+        </li>
+        <li>
+          <strong>const:</strong> This declares a block-scoped variable whose
+          value cannot be changed after assignment. It must be initialized
+          during declaration.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q7. What is the function of a document.write() method?
+    </div>
+    <div class="answer">
+      The <code>document.write()</code> method in JavaScript is used to write
+      content directly to the HTML document. It is primarily used for debugging
+      and testing purposes. However, it should be avoided in modern web
+      development as it can overwrite the entire document if called after the
+      page has loaded.
+      <div class="code-container">
+        <pre><code>document.write("Hello World!");</code></pre>
+      </div>
+    </div>
+
+    <div class="question">
+      Q8. Explain prompt(), confirm(), alert() functions in JavaScript.
+    </div>
+    <div class="answer">
+      These are built-in JavaScript functions for user interaction:
+      <ul>
+        <li>
+          <strong>alert():</strong> Displays a simple alert dialog with a
+          message. It has an OK button.
+        </li>
+        <li>
+          <strong>confirm():</strong> Displays a dialog with a message and two
+          buttons: OK and Cancel. It returns true if OK is clicked, and false if
+          Cancel is clicked.
+        </li>
+        <li>
+          <strong>prompt():</strong> Displays a dialog with a message prompting
+          the user for input. It returns the input value or null if Cancel is
+          clicked.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q9. What are the different variations of CSS?</div>
+    <div class="answer">
+      CSS has several variations, including:
+      <ul>
+        <li>
+          <strong>CSS1:</strong> The first version of CSS, which introduced
+          basic styling features.
+        </li>
+        <li>
+          <strong>CSS2:</strong> Enhanced features like positioning, media
+          types, and improved selectors.
+        </li>
+        <li>
+          <strong>CSS3:</strong> The latest version, which adds support for new
+          layout models (Flexbox and Grid), animations, transitions, and
+          responsive design techniques.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q10. What is a CSS selector? Write names of 5 CSS selectors.
+    </div>
+    <div class="answer">
+      A CSS selector is a pattern used to select the elements you want to style.
+      Here are five types of CSS selectors:
+      <ul>
+        <li>
+          <strong>Type Selector:</strong> Selects all elements of a specified
+          type (e.g., <code>div</code>, <code>p</code>).
+        </li>
+        <li>
+          <strong>Class Selector:</strong> Selects elements with a specific
+          class attribute (e.g., <code>.className</code>).
+        </li>
+        <li>
+          <strong>ID Selector:</strong> Selects an element with a specific id
+          attribute (e.g., <code>#idName</code>).
+        </li>
+        <li>
+          <strong>Attribute Selector:</strong> Selects elements with a specified
+          attribute (e.g., <code>[type="text"]</code>).
+        </li>
+        <li>
+          <strong>Descendant Selector:</strong> Selects elements that are
+          descendants of a specified element (e.g., <code>div p</code> selects
+          all <code>p</code> elements inside <code>div</code> elements).
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q11. What is the use of CSS Opacity?</div>
+    <div class="answer">
+      The CSS <code>opacity</code> property is used to specify the transparency
+      level of an element. It accepts values from 0.0 (completely transparent)
+      to 1.0 (completely opaque). For example:
+      <div class="code-container">
+        <pre><code>opacity: 0.5;</code></pre>
+      </div>
+      This would make the element 50% transparent.
+    </div>
+
+    <div class="question">Q12. Explain universal selector.</div>
+    <div class="answer">
+      The universal selector in CSS is represented by the asterisk symbol
+      (<code>*</code>) and selects all elements on the web page. It is often
+      used to apply a style universally or to reset default styles. For example:
+      <div class="code-container">
+        <pre><code>* { margin: 0; padding: 0; }</code></pre>
+      </div>
+      This code resets the margin and padding for all elements to zero.
+    </div>
+
+    <div class="question">
+      Q13. Name the property for controlling the image repetition of the
+      background with code.
+    </div>
+    <div class="answer">
+      The property used to control the repetition of background images in CSS is
+      <code>background-repeat</code>. Here’s an example:
+      <div class="code-container">
+        <pre><code>background-repeat: no-repeat;</code></pre>
+      </div>
+      This prevents the background image from repeating.
+    </div>
+
+    <div class="question">
+      Q14. What is the difference between inline, embedded, and external style
+      sheets?
+    </div>
+    <div class="answer">
+      The differences are as follows:
+      <ul>
+        <li>
+          <strong>Inline Style Sheets:</strong> Styles are applied directly
+          within HTML elements using the <code>style</code> attribute. Example:
+          <code>&lt;h1 style="color: red;"&gt;Title&lt;/h1&gt;</code>
+        </li>
+        <li>
+          <strong>Embedded Style Sheets:</strong> Styles are defined within a
+          <code>&lt;style&gt;</code> tag in the
+          <code>&lt;head&gt;</code> section of the HTML document. This affects
+          only the current document.
+        </li>
+        <li>
+          <strong>External Style Sheets:</strong> Styles are written in separate
+          CSS files and linked to the HTML document using the
+          <code>&lt;link&gt;</code> tag. This allows for consistent styling
+          across multiple pages.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q15. What is CSS Box model and what are its elements?
+    </div>
+    <div class="answer">
+      The CSS Box Model describes the rectangular boxes generated for elements
+      in the document tree and consists of the following elements:
+      <ul>
+        <li>
+          <strong>Content:</strong> The actual content of the element, where
+          text and images appear.
+        </li>
+        <li>
+          <strong>Padding:</strong> The space between the content and the
+          border, transparent by default.
+        </li>
+        <li>
+          <strong>Border:</strong> The area that surrounds the padding (if any)
+          and content.
+        </li>
+        <li>
+          <strong>Margin:</strong> The outermost layer that creates space
+          between the element and surrounding elements.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q16. What is the float property of CSS?</div>
+    <div class="answer">
+      The <code>float</code> property in CSS is used to position elements to the
+      left or right of their containing element, allowing other content to flow
+      around them. For example:
+      <div class="code-container">
+        <pre><code>float: left;</code></pre>
+      </div>
+      This would float the element to the left side of its container.
+    </div>
+
+    <div class="question">
+      Q17. What is the purpose of the z-index and how is it used?
+    </div>
+    <div class="answer">
+      The <code>z-index</code> property in CSS controls the vertical stacking
+      order of positioned elements (elements with a position value of
+      <code>relative</code>, <code>absolute</code>, or <code>fixed</code>). A
+      higher <code>z-index</code> value means the element will appear above
+      those with lower values. For example:
+      <div class="code-container">
+        <pre><code>z-index: 10;</code></pre>
+      </div>
+      This sets the stacking order of the element to 10.
+    </div>
+
+    <div class="question">
+      Q18. Explain the difference between visibility: hidden and display: none?
+    </div>
+    <div class="answer">
+      The differences are:
+      <ul>
+        <li>
+          <strong>visibility: hidden:</strong> The element is hidden but still
+          takes up space in the layout. It is not visible to the user but
+          remains part of the document flow.
+        </li>
+        <li>
+          <strong>display: none:</strong> The element is completely removed from
+          the document flow, meaning it takes up no space in the layout. Other
+          elements will occupy the space where it was previously rendered.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q19. Write Data types in JavaScript.</div>
+    <div class="answer">
+      JavaScript supports the following data types:
+      <ul>
+        <li>
+          <strong>Primitive Types:</strong>
+          <ul>
+            <li><code>String</code></li>
+            <li><code>Number</code></li>
+            <li><code>Boolean</code></li>
+            <li><code>Undefined</code></li>
+            <li><code>Null</code></li>
+            <li><code>Symbol</code> (introduced in ES6)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Reference Types:</strong>
+          <ul>
+            <li><code>Object</code></li>
+            <li><code>Array</code></li>
+            <li><code>Function</code></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q20. Explain Min height and Max height property in CSS.
+    </div>
+    <div class="answer">
+      The <code>min-height</code> property in CSS sets the minimum height of an
+      element. It ensures that the element does not shrink below a specified
+      height, regardless of its content. For example:
+      <div class="code-container">
+        <pre><code>min-height: 100px;</code></pre>
+      </div>
+      The <code>max-height</code> property sets the maximum height of an
+      element. It prevents the element from exceeding a specified height. For
+      example:
+      <div class="code-container">
+        <pre><code>max-height: 200px;</code></pre>
+      </div>
+    </div>
+
+    <div class="question">Q21. What does the ‘a’ in rgba mean?</div>
+    <div class="answer">
+      In <code>rgba</code>, the 'a' stands for "alpha," which represents the
+      opacity level of the color. The <code>rgba()</code> function takes four
+      parameters: red, green, blue, and alpha (opacity), where alpha ranges from
+      0 (completely transparent) to 1 (completely opaque). For example:
+      <div class="code-container">
+        <pre><code>rgba(255, 0, 0, 0.5)</code></pre>
+      </div>
+      This represents a semi-transparent red color.
+    </div>
+
+    <div class="question">Q22. What are CSS HSL Colors?</div>
+    <div class="answer">
+      HSL stands for Hue, Saturation, and Lightness. It is a way to represent
+      colors in CSS:
+      <ul>
+        <li>
+          <strong>Hue:</strong> Represents the color type on the color wheel,
+          ranging from 0 to 360 degrees.
+        </li>
+        <li>
+          <strong>Saturation:</strong> Represents the intensity of the color,
+          with 0% being a shade of gray and 100% being the full color.
+        </li>
+        <li>
+          <strong>Lightness:</strong> Represents the brightness of the color,
+          with 0% being black and 100% being white.
+        </li>
+      </ul>
+      The syntax for HSL colors is <code>hsl(hue, saturation, lightness)</code>.
+    </div>
+
+    <div class="question">
+      Q23. What are the different CSS border properties?
+    </div>
+    <div class="answer">
+      The main CSS border properties include:
+      <ul>
+        <li>
+          <strong>border-width:</strong> Specifies the width of the border.
+        </li>
+        <li>
+          <strong>border-style:</strong> Specifies the style of the border
+          (e.g., solid, dashed, dotted).
+        </li>
+        <li>
+          <strong>border-color:</strong> Specifies the color of the border.
+        </li>
+        <li>
+          <strong>border-radius:</strong> Rounds the corners of the border.
+        </li>
+      </ul>
+      You can also use the shorthand property <code>border:</code> to set all
+      three properties at once. For example:
+      <div class="code-container">
+        <pre><code>border: 2px solid red;</code></pre>
+      </div>
+    </div>
+
+    <div class="question">
+      Q24. What does margin: 40px 100px 120px 80px signify?
+    </div>
+    <div class="answer">
+      The <code>margin: 40px 100px 120px 80px;</code> shorthand notation
+      specifies the margin values for all four sides of an element in the
+      following order:
+      <ul>
+        <li><strong>Top margin:</strong> 40px</li>
+        <li><strong>Right margin:</strong> 100px</li>
+        <li><strong>Bottom margin:</strong> 120px</li>
+        <li><strong>Left margin:</strong> 80px</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      Q25. What is the difference between margin and padding?
+    </div>
+    <div class="answer">
+      The differences between margin and padding are:
+      <ul>
+        <li>
+          <strong>Margin:</strong> The space outside an element, separating it
+          from other elements. It is transparent and does not affect the
+          element's background.
+        </li>
+        <li>
+          <strong>Padding:</strong> The space inside an element, between the
+          content and the border. It is part of the element's background and
+          affects its overall size.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q26. What are the different CSS link states?</div>
+    <div class="answer">
+      The different CSS link states include:
+      <ul>
+        <li><strong>link:</strong> The default state of a link.</li>
+        <li>
+          <strong>visited:</strong> The state of a link that has been visited by
+          the user.
+        </li>
+        <li>
+          <strong>hover:</strong> The state when the user hovers over the link.
+        </li>
+        <li>
+          <strong>active:</strong> The state when the link is being clicked.
+        </li>
+      </ul>
+      These states can be styled individually using CSS.
+    </div>
+
+    <div class="question">
+      Q27. What are the various positioning properties in CSS?
+    </div>
+    <div class="answer">
+      The main positioning properties in CSS are:
+      <ul>
+        <li>
+          <strong>static:</strong> The default positioning; elements are
+          positioned according to the normal document flow.
+        </li>
+        <li>
+          <strong>relative:</strong> Positions an element relative to its normal
+          position.
+        </li>
+        <li>
+          <strong>absolute:</strong> Positions an element relative to its
+          nearest positioned ancestor (not static).
+        </li>
+        <li>
+          <strong>fixed:</strong> Positions an element relative to the viewport;
+          it remains in the same position even when scrolling.
+        </li>
+        <li>
+          <strong>sticky:</strong> A hybrid of relative and fixed positioning;
+          the element toggles between relative and fixed depending on the scroll
+          position.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q28. What does the CSS float property do?</div>
+    <div class="answer">
+      The <code>float</code> property in CSS is used to allow an element to
+      float to the left or right of its container, enabling text and inline
+      elements to wrap around it. It can be used for layout purposes. For
+      example:
+      <div class="code-container">
+        <pre><code>float: right;</code></pre>
+      </div>
+      This will float the element to the right side of its container.
+    </div>
+
+    <div class="question">Q29. What does display: inline-block do?</div>
+    <div class="answer">
+      The <code>display: inline-block;</code> property in CSS allows an element
+      to be treated as an inline element while maintaining its block properties.
+      This means the element can have width and height, and it will sit next to
+      other inline or inline-block elements. It also allows for margins and
+      paddings to be applied without affecting the surrounding elements' layout.
+    </div>
+
+    <div class="question">
+      Q30. How can we make our website responsive using CSS?
+    </div>
+    <div class="answer">
+      To make a website responsive using CSS, you can:
+      <ul>
+        <li>
+          Use relative units such as percentages or `em`/`rem` instead of fixed
+          units like pixels.
+        </li>
+        <li>
+          Utilize media queries to apply different styles based on screen size
+          or device type. Example:
+        </li>
+        <div class="code-container">
+          <pre><code>@media (max-width: 600px) { ... }</code></pre>
+        </div>
+        <li>
+          Implement a flexible grid layout with CSS Grid or Flexbox to adapt to
+          different screen sizes.
+        </li>
+        <li>
+          Set images and other media to have a max-width of 100% to ensure they
+          scale down appropriately.
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">Q31. What is CSS flexbox?</div>
+    <div class="answer">
+      CSS Flexbox (Flexible Box Layout) is a layout model that allows you to
+      design a complex layout structure in a more efficient and predictable way
+      than traditional models. It provides the ability to align items,
+      distribute space, and rearrange elements within a container, regardless of
+      their size. It is particularly useful for responsive design, as it enables
+      elements to grow and shrink to fit the available space.
+    </div>
+
+    <div class="question">
+      Q32. What is typeof operator in JavaScript? Explain with examples.
+    </div>
+    <div class="answer">
+      The <code>typeof</code> operator in JavaScript is used to determine the
+      data type of a variable or expression. It returns a string indicating the
+      type. For example:
+      <div class="code-container">
+        <pre><code>typeof "Hello" // "string"</code></pre>
+        <pre><code>typeof 42 // "number"</code></pre>
+        <pre><code>typeof true // "boolean"</code></pre>
+        <pre><code>typeof undefined // "undefined"</code></pre>
+        <pre><code>typeof null // "object"</code></pre>
+        <pre><code>typeof [1, 2, 3] // "object"</code></pre>
+      </div>
+    </div>
+
+    <div class="question">
+      Q33. What is the difference Between Programming, Scripting, and Markup
+      Languages?
+    </div>
+    <div class="answer">
+      The differences are as follows:
+      <ul>
+        <li>
+          <strong>Programming Languages:</strong> Used to create software
+          applications. They are typically compiled and executed to perform
+          complex tasks. Examples include C++, Java, and Python.
+        </li>
+        <li>
+          <strong>Scripting Languages:</strong> A subset of programming
+          languages that are interpreted rather than compiled. They are often
+          used for automating tasks or adding interactivity to web pages.
+          Examples include JavaScript, PHP, and Ruby.
+        </li>
+        <li>
+          <strong>Markup Languages:</strong> Not programming languages; they are
+          used to define the structure and presentation of text in documents.
+          Examples include HTML (for web pages) and XML (for data interchange).
+        </li>
+      </ul>
+    </div>
+
+<div class="level">Level B</div>
+
+<div class="question">Q34. What are CSS backgrounds? List the properties with Syntax?</div>
+<div class="answer">
+    CSS backgrounds are used to set the background for an element. The main properties for CSS backgrounds are:
+    <ul>
+        <li><code>background-color</code>: Sets the background color of an element.</li>
+        <li><code>background-image</code>: Specifies an image as the background.</li>
+        <li><code>background-repeat</code>: Determines how the background image is repeated.</li>
+        <li><code>background-position</code>: Sets the starting position of a background image.</li>
+        <li><code>background-size</code>: Specifies the size of the background image.</li>
+    </ul>
+    <p>Syntax:</p>
+    <div class="code-container">
+        <pre><code>element {
+    background-color: color;
+    background-image: url('image.jpg');
+    background-repeat: repeat | no-repeat | repeat-x | repeat-y;
+    background-position: position;
+    background-size: size;
+}</code></pre>
+    </div>
+</div>
+
+<div class="question">Q35. How can we format text in CSS? Write with Syntax?</div>
+<div class="answer">
+    Text can be formatted in CSS using various properties to control its appearance:
+    <ul>
+        <li><code>font-family</code>: Specifies the font of the text.</li>
+        <li><code>font-size</code>: Defines the size of the font.</li>
+        <li><code>font-weight</code>: Sets the thickness of the font.</li>
+        <li><code>text-align</code>: Aligns the text (left, right, center, justify).</li>
+        <li><code>line-height</code>: Sets the space between lines of text.</li>
+        <li><code>color</code>: Defines the text color.</li>
+    </ul>
+    <p>Syntax:</p>
+    <div class="code-container">
+        <pre><code>element {
+    font-family: 'Font Name';
+    font-size: size;
+    font-weight: normal | bold | bolder | lighter | number;
+    text-align: left | right | center | justify;
+    line-height: number | normal;
+    color: color;
+}</code></pre>
+    </div>
+</div>
+
+<div class="question">Q36. Write a JavaScript Program in an HTML document to Print the Fibonacci Sequence.</div>
+<div class="answer">
+    Here is a simple program to print the Fibonacci sequence up to a specified number:
+    <div class="code-container">
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Fibonacci Sequence&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        function fibonacci(n) {
+            let a = 0, b = 1, temp;
+            document.write("Fibonacci Sequence: ");
+            for (let i = 0; i &lt; n; i++) {
+                document.write(a + " ");
+                temp = a;
+                a = b;
+                b = temp + b;
+            }
+        }
+        fibonacci(10); // Print first 10 Fibonacci numbers
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q37. What are the key differences between Java and JavaScript? How is JavaScript different from Java?</div>
+<div class="answer">
+    <ul>
+        <li><strong>Type:</strong> Java is a statically typed, compiled language, while JavaScript is a dynamically typed, interpreted language.</li>
+        <li><strong>Syntax:</strong> Java uses class-based syntax, whereas JavaScript is prototype-based.</li>
+        <li><strong>Execution:</strong> Java applications require a Java Virtual Machine (JVM) to run, while JavaScript code runs in the browser or on a server with Node.js.</li>
+        <li><strong>Use Cases:</strong> Java is primarily used for backend development and Android apps, while JavaScript is mainly used for web development (frontend and backend with Node.js).</li>
+        <li><strong>Concurrency:</strong> Java uses multi-threading for concurrency, while JavaScript uses an event-driven model.</li>
+    </ul>
+</div>
+
+<div class="question">Q38. Explain the following function with respect to JavaScript.</div>
+<div class="answer">
+    <ul>
+        <li><strong>a) Substring:</strong> This method extracts characters from a string between two specified indices. <br>
+        <code>string.substring(startIndex, endIndex);</code></li>
+        <li><strong>b) Unshift():</strong> This method adds one or more elements to the beginning of an array and returns the new length of the array. <br>
+        <code>array.unshift(element1, element2, ...);</code></li>
+        <li><strong>c) Concat():</strong> This method is used to merge two or more arrays. It does not change the existing arrays but returns a new array. <br>
+        <code>array1.concat(array2, array3, ...);</code></li>
+    </ul>
+</div>
+
+<div class="question">Q39. Write a function in JavaScript that accepts three numbers as arguments and returns the greatest number then prints it.</div>
+<div class="answer">
+    Here is a simple function to find the greatest number among three:
+    <div class="code-container">
+        <pre><code>function findGreatestNumber(num1, num2, num3) {
+    return Math.max(num1, num2, num3);
+}
+const greatest = findGreatestNumber(5, 10, 15);
+console.log("Greatest number is: " + greatest);</code></pre>
+    </div>
+</div>
+
+<div class="question">Q40. Explain the difference between Break and Continue with an example.</div>
+<div class="answer">
+    <ul>
+        <li><strong>Break:</strong> The break statement is used to terminate a loop or switch statement immediately. <br>
+        Example:
+        <div class="code-container">
+            <pre><code>for (let i = 0; i &lt; 10; i++) {
+    if (i === 5) break; // Breaks the loop when i is 5
+    console.log(i);
+}</code></pre>
+        </div></li>
+        <li><strong>Continue:</strong> The continue statement skips the current iteration of a loop and moves to the next iteration. <br>
+        Example:
+        <div class="code-container">
+            <pre><code>for (let i = 0; i &lt; 10; i++) {
+    if (i === 5) continue; // Skips the current iteration when i is 5
+    console.log(i);
+}</code></pre>
+        </div></li>
+    </ul>
+</div>
+
+<div class="question">Q41. Write a code in JavaScript to accept a string from the user. The program should display the length of the string, print the string in upper case, and print the first two characters of the string.</div>
+<div class="answer">
+    Here is a simple program to achieve this:
+    <div class="code-container">
+        <pre><code>const userInput = prompt("Enter a string:");
+console.log("Length of the string: " + userInput.length);
+console.log("String in uppercase: " + userInput.toUpperCase());
+console.log("First two characters: " + userInput.substring(0, 2));</code></pre>
+    </div>
+</div>
+
+<div class="question">Q42. Write a program in JavaScript to print the sum of even numbers between 1 to 100 using a for loop.</div>
+<div class="answer">
+    Here is a simple program to sum even numbers:
+    <div class="code-container">
+        <pre><code>let sum = 0;
+for (let i = 1; i &lt;= 100; i++) {
+    if (i % 2 === 0) {
+        sum += i;
+    }
+}
+console.log("Sum of even numbers between 1 and 100: " + sum);</code></pre>
+    </div>
+</div>
+
+<div class="question">Q43. Differentiate between prompt() and alert() methods.</div>
+<div class="answer">
+    <ul>
+        <li><strong>prompt():</strong> This method displays a dialog box that prompts the user for input. It returns the input value as a string. <br>
+        Example: <code>let name = prompt("Enter your name:");</code></li>
+        <li><strong>alert():</strong> This method displays an alert box with a specified message and an OK button. It does not return any value. <br>
+        Example: <code>alert("Hello, World!");</code></li>
+    </ul>
+</div>
+
+<div class="level">Level C</div>
+
+<div class="question">Q44. What is the main difference between var, const, and let? Explain With program.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> The main differences between <code>var</code>, <code>let</code>, and <code>const</code> in JavaScript are:</p>
+    <ul>
+        <li><strong>Scope:</strong> <code>var</code> is function-scoped or globally scoped, while <code>let</code> and <code>const</code> are block-scoped.</li>
+        <li><strong>Hoisting:</strong> Variables declared with <code>var</code> are hoisted to the top of their scope and initialized with <code>undefined</code>, while <code>let</code> and <code>const</code> are hoisted but not initialized.</li>
+        <li><strong>Reassignment:</strong> Variables declared with <code>let</code> can be reassigned, while <code>const</code> cannot be reassigned after its initial assignment.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <div class="code-container">
+        <pre><code>
+var x = 10;
+if (true) {
+    var x = 20; // Same variable
+    console.log(x); // 20
+}
+console.log(x); // 20
+
+let y = 10;
+if (true) {
+    let y = 20; // Different variable
+    console.log(y); // 20
+}
+console.log(y); // 10
+
+const z = 30;
+// z = 40; // Error: Assignment to constant variable
+console.log(z); // 30
+        </code></pre>
+    </div>
+</div>
+
+<div class="question">Q45. Write code to create the following HTML Form to accept User’s Information as part of a Magazine Survey:</div>
+<div class="answer">
+    <p><strong>Answer:</strong> Below is an example of an HTML form for user information:</p>
+    <div class="code-container">
+        <pre><code>
+            &lt;form action="/submit" method="post"&gt;
+                &lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name" required&gt;
+            
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;
+            
+                &lt;label for="age"&gt;Age:&lt;/label&gt;
+                &lt;input type="number" id="age" name="age" required&gt;
+            
+                &lt;label for="feedback"&gt;Feedback:&lt;/label&gt;
+                &lt;textarea id="feedback" name="feedback" rows="4" required&gt;&lt;/textarea&gt;
+            
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+            </code></pre>
+            
+    </div>
+</div>
+
+<div class="question">Q46. Create an external style sheet “style.css” with the following specifications for the various HTML.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> Here is an example of an external stylesheet named <code>style.css</code>:</p>
+    <div class="code-container">
+        <pre><code>
+/* style.css */
+body {
+    background-color: aqua;
+    color: navy;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    text-indent: 60px;
+    font-weight: normal;
+}
+        </code></pre>
+    </div>
+    <p>To link this stylesheet in your HTML document, include the following line in the <code>&lt;head&gt;</code> section:</p>
+    <div class="code-container">
+        <pre><code>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</code></pre>
+    </div>
+</div>
+
+<div class="question">Q47. What is the difference between Inline-Block, Block, and Inline in CSS? Explain with proper code.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> The differences between Inline, Block, and Inline-Block elements in CSS are:</p>
+    <ul>
+        <li><strong>Block:</strong> Block elements start on a new line and take the full width available. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>.</li>
+        <li><strong>Inline:</strong> Inline elements do not start on a new line and only take as much width as necessary. Examples include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>.</li>
+        <li><strong>Inline-Block:</strong> Inline-block elements are similar to inline elements, but they respect width and height properties and can have margin and padding. Examples include <code>&lt;button&gt;</code>.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <div class="code-container">
+        <pre><code>
+<div style="background-color: lightblue;">Block Element</div>
+<span style="background-color: lightgreen;">Inline Element</span>
+<span style="background-color: lightgreen;">Inline Element</span>
+<div style="background-color: lightcoral; display: inline-block;">Inline-Block Element</div>
+        </code></pre>
+    </div>
+</div>
+
+<div class="question">Q48. In how many ways can you change the font size of an element? Explain with proper code.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> You can change the font size of an element using various methods:</p>
+    <ul>
+        <li><strong>CSS:</strong> Using the <code>font-size</code> property.</li>
+        <li><strong>Inline CSS:</strong> Applying style directly in the element.</li>
+        <li><strong>JavaScript:</strong> Using JavaScript to manipulate the style property.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <div class="code-container">
+        <pre><code>
+/* CSS */
+p {
+    font-size: 20px; /* External CSS */
+}
+
+/* Inline CSS */
+<div style="font-size: 25px;">This is inline CSS</div>
+
+/* JavaScript */
+document.getElementById("myElement").style.fontSize = "30px";
+        </code></pre>
+    </div>
+</div>
+
+<div class="question">Q49. Create a Horizontal Navigation Menu using CSS.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> Below is an example of a horizontal navigation menu:</p>
+    <div class="code-container">
+        <pre><code>
+<nav>
+    <ul style="list-style-type: none; padding: 0; display: flex;">
+        <li style="margin-right: 20px;"><a href="#">Home</a></li>
+        <li style="margin-right: 20px;"><a href="#">About</a></li>
+        <li style="margin-right: 20px;"><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+        </code></pre>
+    </div>
+</div>
+
+<div class="question">Q50. Describe the Concept of Flexbox and its advantage over traditional CSS layouts.</div>
+<div class="answer">
+    <p><strong>Answer:</strong> Flexbox (Flexible Box Layout) is a CSS layout mode designed to provide an efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown. The advantages of Flexbox over traditional CSS layouts include:</p>
+    <ul>
+        <li>Flexibility: Flex items can grow and shrink to fit the container.</li>
+        <li>Alignment: Items can be easily aligned vertically and horizontally.</li>
+        <li>Ordering: Items can be reordered without changing the HTML structure.</li>
+        <li>Responsiveness: Flexbox makes it easier to create responsive layouts.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <div class="code-container">
+        <pre><code>
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    flex: 1; /* Grow and shrink equally */
+}
+        </code></pre>
+    </div>
+</div>
+
+
+<footer>
+    &copy; 2024 || Made with ❤️ By Aditya Dhiman
+</footer>
+</body>
+</html>
+
+  </body>
+</html>
