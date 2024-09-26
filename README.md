@@ -20,9 +20,23 @@ Welcome to the repository containing solutions for all question banks for the B.
 - Easily accessible in one click
 - Supports learning and exam preparation
 
-## Subjects Covered
+## Semesters Covered
 
-This repository includes solutions for the following subjects:
+### Semester 4th:
+
+Includes solutions for the following subjects:
+
+1. Data Communication and Computer Networks.
+
+2. Computer System Architecture.
+
+3. Advanced Database Management System.
+
+4. Stress Management.
+
+### Semester 5th:
+
+Includes solutions for the following subjects:
 
 1. Data Warehouse and Data Mining
 2. Full Stack Development
