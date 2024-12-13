@@ -26,6 +26,12 @@ Welcome to the repository containing solutions for all question banks for the B.
 
 Includes solutions for the following subjects:
 
+1. Object Oriented Programming.
+
+### Semester 4th:
+
+Includes solutions for the following subjects:
+
 1. Data Communication and Computer Networks.
 
 2. Computer System Architecture.
