@@ -1,6 +1,6 @@
 # Question Banks Solutions for B.Tech CSE V Semester
 
-![image](questionBank.png)
+![alt text](image.png)
 
 Welcome to the repository containing solutions for all question banks for the B.Tech Computer Science and Engineering (CSE) V Semester at DBUU. This resource aims to provide students with detailed and well-explained solutions to help enhance their understanding of the subjects.
 
@@ -22,11 +22,12 @@ Welcome to the repository containing solutions for all question banks for the B.
 
 ## Semesters Covered
 
-### Semester 4th:
+### Semester 3rd:
 
 Includes solutions for the following subjects:
 
 1. Object Oriented Programming.
+2. Operating System.
 
 ### Semester 4th:
 
