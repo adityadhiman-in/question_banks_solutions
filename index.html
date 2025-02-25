@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Dhiman</title>
+    <title>Solution Banks - Devtodsa</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -28,7 +28,7 @@
       }
       h1 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
       }
       h2 {
         margin-top: 0.25rem;
@@ -38,7 +38,7 @@
       }
       .welcome {
         margin: 2rem 0;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         text-align: center;
       }
@@ -63,6 +63,25 @@
         font-size: 2rem;
         color: #002402;
       }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .quesBankContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 800px;
+        padding-bottom: 2rem;
+      }
+      .courseHeading {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
       @media screen and (max-width: 1024px) {
         body {
           margin: 1rem 10rem;
@@ -74,6 +93,19 @@
         }
         .connect {
           margin-top: 2rem;
+        }
+        .quesBankContainer {
+          display: flex !important;
+          flex-direction: column;
+          gap: 1rem;
+          width: 800px;
+          padding-bottom: 2rem;
+        }
+        .courseHeading {
+          padding-top: 2rem;
+          font-size: 1.875rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
         }
       }
       .btn {
@@ -99,7 +131,7 @@
   </head>
   <body>
     <h1>Question Bank Solutions</h1>
-    <h2>By Aditya Dhiman</h2>
+    <h2>By Devtodsa</h2>
     <div class="container">
       <h3 class="welcome">Welcome to Solution Bank</h3>
       <p>
@@ -107,20 +139,55 @@
         message file. And this page is designed to get solve your queries
         regarding solution banks. Get the solution from the below links
       </p>
+      <h2 class="courseHeading">B.Tech CSE</h2>
       <div class="quesBankContainer">
         <a
-          href="https://drive.google.com/drive/folders/1eVWq9gWcLDpa2uXhiY-FKvwLbCKmm8C5"
+          href="https://drive.google.com/drive/folders/1BEm7d4TKKHrksSZeacVmSoII1qSMZgkB?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 1st Sem</button> </a
+        ><a
+          href="https://drive.google.com/drive/folders/1ROySoiVwjU2TxwPFUuscvAou3JNIidp7?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 2nd Sem</button>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1eVWq9gWcLDpa2uXhiY-FKvwLbCKmm8C5?usp=drive_link"
         >
           <button class="btn">Solution Bank For B.Tech 3rd Sem</button> </a
         ><a
-          href="https://drive.google.com/drive/folders/1GCSkOeJprW0BIZTztA8ii77XcP-VCBU6?usp=sharing"
+          href="https://drive.google.com/drive/folders/1GCSkOeJprW0BIZTztA8ii77XcP-VCBU6?usp=drive_link"
         >
           <button class="btn">Solution Bank For B.Tech 4th Sem</button>
         </a>
         <a
-          href="https://drive.google.com/drive/folders/10OYqOF48hRFzk2tJOyUCYxJmVJ_CM2zo?usp=sharing"
+          href="https://drive.google.com/drive/folders/10OYqOF48hRFzk2tJOyUCYxJmVJ_CM2zo?usp=drive_link"
         >
-          <button class="btn">Solution Bank For B.Tech 5th Sem</button>
+          <button class="btn">Solution Bank For B.Tech 5th Sem</button> </a
+        ><a
+          href="https://drive.google.com/drive/folders/1yPk9LHy6RO9g8PNpYCKbXvYQzaPeKG78?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 6th Sem</button> </a
+        ><a
+          href="https://drive.google.com/drive/folders/1zZx1bTl7HBC-m1eXkrtj-XjqANlx6H6V?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 7th Sem</button>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1LmpuGYLUYMSUuTZfSLb7UCkVdrcp88_l?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 8th Sem</button>
+        </a>
+      </div>
+      <h2 class="courseHeading">BCA</h2>
+      <div class="quesBankContainer">
+        <a
+          href="https://drive.google.com/drive/folders/1GGJLJIlxS8txQh9v3eOZEgyJEpD_llle?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 1st Sem</button> </a
+        ><a
+          href="https://drive.google.com/drive/folders/1YSgkAIUQa9xtNSpjpINs66SbsbJEIK0L?usp=drive_link"
+        >
+          <button class="btn">Solution Bank For B.Tech 2nd Sem</button>
         </a>
       </div>
 
